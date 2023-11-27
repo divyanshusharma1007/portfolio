@@ -1,0 +1,22 @@
+/* The code you provided is a test suite for the `CertificatesComponent` in an Angular application. */
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+
+import { CertificatesComponent } from './certificates.component';
+
+describe('CertificatesComponent', () => {
+  let component: CertificatesComponent;
+  let fixture: ComponentFixture<CertificatesComponent>;
+
+  beforeEach(() => {
+    TestBed.configureTestingModule({
+      declarations: [CertificatesComponent]
+    });
+    fixture = TestBed.createComponent(CertificatesComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});

@@ -1,0 +1,28 @@
+<!-- The code you provided is an HTML section that displays a list of projects. Here's a breakdown of
+what each part of the code does: -->
+
+<section class="text-gray-600 body-font bg-gray-50" id="project">
+  <app-heading heading="My-work"></app-heading>
+  <br />
+  <br />
+  <div class="swiper-container overflow-hidden">
+    <div class="swiper-wrapper">
+      <div *ngFor="let project of projects" class="swiper-slide">
+        <div class="h-[21rem] border-2 border-white-200 bg-white border-opacity-60 shadow-lg rounded-lg overflow-hidden">
+          <div class="p-6">
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">{{ project.name  }}</h1>
+            <p class="leading-relaxed mb-3">{{ project.description }}</p>
+            <a [href]="project.url" class="absolute bottom-20">
+              <button
+              class="inline-flex items-center bg-gray-800 border-0 focus:outline-none hover:bg-gray-600 rounded text-base mt-4 md:mt-0 text-yellow-50 px-8 py-2"
+              >
+              Github
+            </button>
+          </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="swiper-scrollbar"></div>
+</section>

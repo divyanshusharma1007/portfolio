@@ -1,0 +1,95 @@
+<!-- The code you provided is an HTML section that represents a contact form and social media links. -->
+<section class="text-gray-600 body-font relative bg-gray-50" id="connect">
+  <div class="container px-5 mx-auto">
+    <app-heading heading="Let's connect"></app-heading>
+    <p class="my-8 text-center">
+      Let's connect for the future opportunities and work together
+    </p>
+    <div class="lg:w-1/2 md:w-2/3 mx-auto py-20 md:py-0">
+      <!-- Your HTML template -->
+      <form class="relative" (submit)="sendEmail()">
+        <div class="flex">
+          <div class="p-2 w-1/2">
+            <label for="name" class="leading-7 text-sm text-gray-600"
+              >Name</label
+            >
+            <input
+              type="text"
+              id="name"
+              name="name"
+              [(ngModel)]="formData.name"
+              class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+            />
+          </div>
+
+          <div class="p-2 w-1/2">
+            <div class="relative">
+              <label for="email" class="leading-7 text-sm text-gray-600"
+                >Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                [(ngModel)]="formData.email"
+                class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="p-2 w-full">
+          <label for="name" class="leading-7 text-sm text-gray-600"
+            >reagards</label
+          >
+          <input
+            type="text"
+            id="name"
+            name="name"
+            [(ngModel)]="formData.reagards"
+            class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+          />
+        </div>
+        <div class="p-2 w-full">
+          <div class="relative">
+            <label for="message" class="leading-7 text-sm text-gray-600"
+              >Message</label
+            >
+            <textarea
+              id="message"
+              name="message"
+              [(ngModel)]="formData.message"
+              class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="p-2 w-full">
+          <button
+            type="submit"
+            class="inline-flex text-white bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-600 rounded text-lg"
+          >
+            Drop Message
+          </button>
+        </div>
+      </form>
+
+      <div class=" hidden md:flex justify-evenly md:py-20">
+        <a href="https://auth.geeksforgeeks.org/user/skprogrammer1007">
+          <img src="../../../assets/gfg.png" alt="" class="w-8" />
+        </a>
+        <a href="https://github.com/skprogrammer1007">
+          <img src="../../../assets/github.svg" alt="" class="w-8" />
+        </a>
+        <a href="https://www.linkedin.com/in/divyanshu-sharma-b75a73221/">
+          <img src="../../../assets/linkedin-2.svg" alt="" class="w-8" />
+        </a>
+        <a href=".">
+          <img src="../../../assets/globe-1.svg" alt="." class="w-8" />
+        </a>
+        <a href="https://www.hackerrank.com/profile/skprogrammer1007">
+          <img src="../../../assets/hackerRank.png" alt="" class="w-8" />
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,7 @@
+/* The code is importing the CSS file `swiper-bundle.css` from the `swiper` package. It is then
+applying the CSS rule to all elements with the class `swiper-slide`, setting the padding to `50px`
+on the top and bottom, and `10px` on the left and right. */
+@import '~swiper/swiper-bundle.css';
+.swiper-slide{
+    padding: 50px 10px;
+}
